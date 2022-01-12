@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css" />
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Datos de login</legend>
+
+        <ul>
+          <li>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autofocus
+              placeholder="Escribe aquí tu email"
+            />
+          </li>
+          <li>
+            <label for="pass">Contraseña:</label>
+            <input type="password" id="pass" name="pass" required />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>INformacion personal</legend>
+
+        <fieldset>
+          <legend>Género</legend>
+          <ul>
+            <li>
+              <input type="radio" id="man" name="gender" />
+              <label for="man">Hombre</label>
+            </li>
+            <li>
+              <input type="radio" id="woman" name="gender" />
+              <label for="woman">Mujer</label>
+            </li>
+            <li>
+              <input type="radio" id="other" name="gender" />
+              <label for="other">Otro</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <label for="tel">Teléfono:</label>
+        <input type="tel" id="tel" />
+
+        <input type="number" name="numero" value="184634641" disabled />
+
+        <input type="number" name="numero2" value="184634641" readonly />
+      </fieldset>
+
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
