@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  div {
+    border: 1px solid black;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+  }
+  
+  div:first-child {
+    background: brown;
+    position: static; /* por defecto */
+  }
+  
+  /* Relativo */
+  div:nth-child(2) {
+    background: chartreuse;
+    position: relative;
+    top: 2rem;
+    right: 5rem;
+    /*   left: 1rem; */
+    bottom: 2rem;
+  }
+  
+  div:nth-child(2) p {
+    position: relative;
+    left: 7rem;
+  }
+  
+  /* Absoluto */
+  div:nth-child(3) {
+    position: relative;
+  }
+  
+  div:nth-child(3) p {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+  div:nth-child(4) {
+    background: chocolate;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    left: 2rem;
+    bottom: 2rem;
+  }
+  
+  div:nth-child(4) p {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  
+  /* Fixed */
+  
+  section {
+    height: 200vh;
+  }
+  
+  div:nth-child(6) {
+    background: cornflowerblue;
+    position: fixed;
+  
+    bottom: 2rem;
+    right: 2rem;
+  }
+  
+  /* Sticky */
+  div:nth-child(8) {
+    background: cyan;
+    position: sticky;
+    top: 2rem;
+  }
+  
+  article {
+    background: blueviolet;
+    background-image: url("https://source.unsplash.com/random");
+    position: fixed; /* absolute */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
