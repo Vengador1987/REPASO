@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* Tamaño de fuente por defecto de HTML es 16px */
+    font-size: 16px;
+  }
+  
+  p {
+    border: 1px solid black;
+    width: fit-content;
+  
+    /* Tamaño de fuente por defecto del p es 1rem */
+    font-size: 1rem;
+  }
+  
+  /* 1rem = tamaño de fuente del HTML */
+  p.rem {
+    padding: 1rem;
+  }
+  
+  /* 1em = tamaño de fuente del elemento */
+  p.em {
+    padding: 1em;
+  }
+  
+  @media (min-width: 500px) {
+    html {
+      font-size: 32px;
+    }
+  }
+  
